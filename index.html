@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>fylo landing page</title>
+  </head>
+  <body>
+    <!-- ==================== HEADER SECTION ==================== -->
+    <header class="header">
+      <div class="container header__container">
+        <!-- ===== LOGO ===== -->
+        <div class="header__logo">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+
+        <!-- ===== NAVIGATION MENU ===== -->
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#features" class="header__nav-link">Features</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Team</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#sign-in" class="header__nav-link">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero">
+      <!-- ===== BACKGROUND DECORATION (RESPONSIVE) ===== -->
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="./images/bg-curvy-mobile.svg"
+        />
+        <img
+          src="./images/bg-curvy-desktop.svg"
+          class="hero__decor-img"
+          alt="A decoration"
+        />
+      </picture>
+
+      <!-- ===== MAIN HERO CONTENT ===== -->
+      <div class="container hero__container">
+        <!-- Hero Illustration -->
+        <img
+          data-aos="fade-up"
+          class="hero__illustration"
+          src="./images/illustration-intro.png"
+          alt="Modern flat illustration of two abstract 
+          figures arranging documents and colors inside a 
+          large black folder with a download icon, representing cloud 
+          hosting and file management services."
+        />
+
+        <!-- ===== HERO TEXT CONTENT ===== -->
+        <div class="hero__info">
+          <h1
+            class="hero__title"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            All your files in one secure location, accessible anywhere.
+          </h1>
+
+          <p
+            class="hero__description"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            Fylo stores all your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends
+            family, and co-workers.
+          </p>
+
+          <!-- Call to Action Button -->
+          <a
+            href="#sign-in"
+            class="button"
+            data-aos="fade-down-left"
+            data-aos-duration="1000"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURES SECTION ==================== -->
+    <section class="features" id="features">
+      <div
+        class="container features__container"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        <!-- ===== FEATURES GRID ===== -->
+        <ul class="features__list">
+          <!-- Feature 1: Access Anywhere -->
+          <li class="features__feature">
+            <img
+              src="./images/icon-access-anywhere.svg"
+              alt="Desktop and mobile devices icon with a map pin"
+            />
+            <h2>Access your files, anywhere</h2>
+            <p class="features__description">
+              The ability to use a smartphone, tablet, or computer to access
+              your account means your files follow you everywhere.
+            </p>
+          </li>
+
+          <!-- Feature 2: Security -->
+          <li class="features__feature">
+            <img
+              src="./images/icon-security.svg"
+              alt="Security shield icon with a checkmark"
+            />
+            <h2>Security you can trust</h2>
+            <p class="features__description">
+              factor authentication and user-controlled encryption are just a
+              couple of the security features we allow to help secure your
+              files.
+            </p>
+          </li>
+
+          <!-- Feature 3: Collaboration -->
+          <li class="features__feature">
+            <img
+              src="./images/icon-collaboration.svg "
+              alt="Clock with a checkmark and group of people icon"
+            />
+            <h2>Real-time collaboration</h2>
+            <p class="features__description">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+          </li>
+
+          <!-- Feature 4: Any File Type -->
+          <li class="features__feature">
+            <img
+              src="./images/icon-any-file.svg"
+              alt="File folder icon containing documents and images"
+            />
+            <h2>Store any type of file</h2>
+            <p class="features__description">
+              Whether you're sharing holidays photos or work documents, Fylo has
+              you covered allowing for all file types to be securely stored and
+              shared.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT / PRODUCTIVITY SECTION ==================== -->
+    <section class="about">
+      <div class="container about__container">
+        <!-- ===== LEFT COLUMN: IMAGE ===== -->
+        <div
+          class="about__image"
+          data-aos="fade-up-right"
+          data-aos-duration="1000"
+        >
+          <img
+            src="./images/illustration-stay-productive.png"
+            alt="Illustration of two people interacting with 
+          colorful chat bubbles surrounding a central circular target symbol."
+          />
+        </div>
+
+        <!-- ===== RIGHT COLUMN: TEXT CONTENT ===== -->
+        <div
+          class="about__info"
+          data-aos="fade-up-left"
+          data-aos-duration="1000"
+        >
+          <h2 class="about__title">
+            Stay productive,<br />
+            wherever you are
+          </h2>
+
+          <!-- Description Paragraph 1 -->
+          <p class="about__description">
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
+          </p>
+
+          <!-- Description Paragraph 2 -->
+          <p class="about__description">
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required.
+          </p>
+
+          <!-- Link with Arrow -->
+          <a href="#" class="about__button">
+            See how Flyo works <img src="./images/icon-arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS / COMMENTS SECTION ==================== -->
+    <section class="comments">
+      <div class="container comments__container">
+        <!-- ===== DECORATIVE QUOTES IMAGE ===== -->
+        <img src="./images/bg-quotes.png" class="comments__decor-img" alt="" />
+
+        <!-- ===== TESTIMONIALS CARDS ===== -->
+        <ul class="comments__list" data-aos="zoom-in" data-aos-duration="1000">
+          <!-- Testimonial 1: Satish Patel -->
+          <li class="comments__comment">
+            <p class="comments__text">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <!-- Profile Info -->
+            <div class="comments__profile">
+              <img
+                src="./images/profile-1.jpg"
+                class="comments__profile-pic"
+                alt="profile picture"
+              />
+              <div class="comments__profile-info">
+                <h3 class="comments__name">Satish Patel</h3>
+                <p class="comments__job">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Testimonial 2: Bruce McKenzie -->
+          <li class="comments__comment">
+            <p class="comments__text">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <!-- Profile Info -->
+            <div class="comments__profile">
+              <img
+                src="./images/profile-2.jpg"
+                class="comments__profile-pic"
+                alt="profile picture"
+              />
+              <div class="comments__profile-info">
+                <h3 class="comments__name">Bruce McKenzie</h3>
+                <p class="comments__job">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Testimonial 3: Iva Boyd -->
+          <li class="comments__comment">
+            <p class="comments__text">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <!-- Profile Info -->
+            <div class="comments__profile">
+              <img
+                src="./images/profile-3.jpg"
+                class="comments__profile-pic"
+                alt="profile picture"
+              />
+              <div class="comments__profile-info">
+                <h3 class="comments__name">Iva Boyd</h3>
+                <p class="comments__job">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==================== SIGN-UP FORM SECTION ==================== -->
+    <section class="form" id="sign-in">
+      <div
+        class="form__container"
+        data-aos="fade-down-right"
+        data-aos-duration="1000"
+      >
+        <!-- ===== FORM HEADER ===== -->
+        <h2 class="form__title">Get early access today</h2>
+        <p class="form__description">
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. If you have any questions, our support team would
+          be happy to help you.
+        </p>
+
+        <!-- ===== EMAIL FORM ===== -->
+        <form data-error="please enter a valid email" id="form">
+          <!-- Email Input Field -->
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Enter your email..."
+            aria-label="Email"
+            id="email-input"
+          />
+
+          <!-- Submit Button -->
+          <button type="submit" class="form__submit-btn" id="submit-btn">
+            Get Started For Free
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER SECTION ==================== -->
+    <footer class="footer">
+      <!-- ===== FOOTER LOGO ===== -->
+      <div class="footer__logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+
+      <!-- ===== FOOTER MAIN CONTENT ===== -->
+      <div class="footer__content">
+        <!-- Location Info -->
+        <div class="footer__location">
+          <img
+            src="./images/icon-location.svg"
+            class="footer__location-icon"
+            alt="location icon"
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+
+        <!-- Contact Information (Phone & Email) -->
+        <div class="footer__contact-info">
+          <!-- Phone -->
+          <div class="footer__info">
+            <img src="./images/icon-phone.svg" alt="phone icon" />
+            <p>+1-543-123-4567</p>
+          </div>
+
+          <!-- Email -->
+          <div class="footer__info">
+            <img src="./images/icon-email.svg" alt="email icon" />
+            <p>example@fylo.com</p>
+          </div>
+        </div>
+
+        <!-- ===== FOOTER NAVIGATION LINKS ===== -->
+        <nav class="footer__nav">
+          <!-- First Column Links -->
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">About Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Jobs</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Press</a>
+            </li>
+          </ul>
+
+          <!-- Second Column Links -->
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy</a>
+            </li>
+          </ul>
+
+          <!-- ===== SOCIAL MEDIA LINKS ===== -->
+          <ul class="footer__social-list">
+            <li class="footer__item">
+              <a
+                href="#"
+                class="footer__social-link"
+                aria-label="facebook icon"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__social-link" aria-label="X icon">
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a
+                href="#"
+                class="footer__social-link"
+                aria-label="instagram icon"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!-- ==================== END FOOTER ==================== -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
